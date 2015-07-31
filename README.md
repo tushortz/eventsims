@@ -57,10 +57,10 @@ Usage: Calculate.new(**outcome list**, **cummulative probability list**)
 ```ruby
 require "Eventsims"
 
-sample = Eventsims::Calculate.new(a, b)
-
 a = [-1,0,3,4]
 b = [0.1, 0.4, 0.7, 1]
+
+sample = Eventsims::Calculate.new(a, b)
 
 puts "Probability: #{sample.prob()}" 
 puts "DiscreteEmp: #{sample.discreteemp()}" 
